@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Recipe | CookBook</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍳 CookBook</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="charts.html">Charts</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="crud-section">
+    <h2>Update Existing Recipe</h2>
+    <form id="updateForm">
+      <label>Enter Recipe ID:</label>
+      <input type="number" id="recipeID" required><br>
+
+      <label>New Recipe Name:</label>
+      <input type="text" id="newName" required><br>
+
+      <button type="submit">Update</button>
+    </form>
+
+    <p id="updateMessage"></p>
+  </section>
+
+  <script>
+    document.getElementById('updateForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id = document.getElementById('recipeID').value;
+      const name = document.getElementById('newName').value;
+      const msg = document.getElementById('updateMessage');
+      msg.textContent = `🔄 Recipe ID ${id} updated to "${name}" (simulated)!`;
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
