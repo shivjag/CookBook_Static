@@ -1,53 +1,87 @@
+/* --- About Page Styles (Member 4 Update) --- */
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff8f0;
-    color: #333;
-  }
-  
-  header {
-    background-color: #f27121;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .btn {
-    background: linear-gradient(35deg, #f27121, #e94057);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-  }
-  
-  footer {
-    background-color: #313131;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff8f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.site-header {
+  background-color: #ff7f32;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header nav {
+  margin-top: 0.5rem;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+  color: #ff7f32;
+  border-bottom: 2px solid #ff7f32;
+  padding-bottom: 6px;
+}
+
+/* Team List */
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  line-height: 1.7;
+}
+
+/* Logical Model Image */
+img[alt*="Logical"] {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Hide the dbdiagram.io logo if not cropped */
+img[alt*="Logical"] {
+  clip-path: inset(0px 0px 35px 0px);
+  object-fit: cover;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #ff7f32;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-radius: 0 0 8px 8px;
+}
