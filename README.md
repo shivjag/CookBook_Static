@@ -14,14 +14,14 @@ This static prototype represents the **UI and structure** of the final dynamic w
 
 ## Overview
 
-| Feature |                 | Description |
-|----------|                |-------------|
-| **Home Page** |           | Overview of the CookBook project and navigation to other sections. |
-| **Charts Page** |         | Displays sample visualizations using Chart.js (e.g., recipe trends by cuisine, difficulty, and month). |
-| **CRUD Page (Preview)** | | Static mock-up of Create, Read, Update, Delete operations for managing recipes. |
-| **Botpress Chatbot** |    | Embedded chatbot for user assistance and feedback. |
-| **About Us Page** |       | Team member details, GitHub link, and project description. |
-| **Dark/Light Mode** |     | UI toggle to improve accessibility and design contrast. |
+Feature                       Description 
+
+**Home Page**                 Overview of the CookBook project and navigation to other sections. 
+**Charts Page**               Displays sample visualizations using Chart.js (e.g., recipe trends by cuisine, difficulty, and month). 
+**CRUD Page (Preview)**       Static mock-up of Create, Read, Update, Delete operations for managing recipes. 
+**Botpress Chatbot**          Embedded chatbot for user assistance and feedback. 
+**About Us Page**             Team member details, GitHub link, and project description. 
+**Dark/Light Mode**           UI toggle to improve accessibility and design contrast. 
 
 ---
 
