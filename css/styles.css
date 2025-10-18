@@ -85,3 +85,66 @@ img[alt*="Logical"] {
   font-size: 0.9rem;
   border-radius: 0 0 8px 8px;
 }
+/* ==============================
+   📊 CHARTS PAGE VISUAL STYLING
+   ============================== */
+
+.chart-section {
+  text-align: center;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.chart-section h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.chart-section p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.chart-card {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.chart-card h3 {
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.chart-card canvas {
+  width: 280px !important;
+  height: 200px !important;
+  max-width: 90%;
+}
+
+/* 📱 Responsive layout for smaller devices */
+@media (max-width: 768px) {
+  .chart-card canvas {
+    width: 230px !important;
+    height: 170px !important;
+  }
+}
