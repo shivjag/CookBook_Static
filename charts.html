@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CookBook | Data Visualization</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <title>CookBook | Charts</title>
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
   <header>
     <h1>🍳 CookBook Data Visualization</h1>
@@ -17,31 +18,26 @@
     </nav>
   </header>
 
-  <section class="chart-section">
-    <h2>Visual Insights from Recipes</h2>
-    <p>Explore our recipe data using interactive charts showing cuisine popularity, difficulty levels, and monthly engagement.</p>
+  <main>
+    <section class="chart-section">
+      <h2>Recipe Analytics Dashboard</h2>
+      <p>Visual insights from our CookBook database showing cuisine diversity, recipe difficulty, and monthly engagement.</p>
+    </section>
 
     <div class="chart-container">
-      <div class="chart-card">
-        <h3>Recipes per Cuisine</h3>
-        <canvas id="barChart"></canvas>
-      </div>
-
-      <div class="chart-card">
-        <h3>Difficulty Distribution</h3>
-        <canvas id="pieChart"></canvas>
-      </div>
-
-      <div class="chart-card">
-        <h3>Monthly Recipe Views</h3>
-        <canvas id="lineChart"></canvas>
-      </div>
+      <canvas id="barChart" width="500" height="300"></canvas>
+      <canvas id="pieChart" width="500" height="300"></canvas>
+      <canvas id="lineChart" width="500" height="300"></canvas>
     </div>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 CookBook Team</p>
+    <p>© 2025 CookBook Team | Designed by Team Member Rishika Katna</p>
   </footer>
+
+  <script src="js/charts.js"></script>
+</body>
+</html>
 
   <script src="scripts/charts.js"></script>
 </body>
