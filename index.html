@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CookBook | Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #f57c00;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #f57c00;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+    }
+
+    h1 {
+      color: #f57c00;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      height: 3px;
+      width: 60px;
+      background-color: #f57c00;
+      margin: 0 auto 25px auto;
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #444;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      background-color: #f57c00;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin: 5px;
+    }
+
+    .links a:hover {
+      background-color: #ffa040;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #f9f9f9;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>🍳 CookBook</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="charts.html">Charts</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="create.html">Create</a></li>
-        <li><a href="read.html">Read</a></li>
-        <li><a href="update.html">Update</a></li>
-        <li><a href="delete.html">Delete</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header>🍳 CookBook</header>
 
-  <!-- Main Section -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="charts.html">Charts</a>
+    <a href="about.html">About</a>
+    <a href="create.html">Create</a>
+    <a href="read.html">Read</a>
+    <a href="update.html">Update</a>
+    <a href="delete.html">Delete</a>
+  </nav>
+
   <main>
-    <section class="hero">
-      <h2>Welcome to CookBook</h2>
-      <p>Explore recipes, learn about cuisines, and visualize your culinary journey.</p>
-      <a class="btn" href="charts.html">View Charts</a>
-    </section>
+    <h1>Welcome to CookBook</h1>
+    <div class="divider"></div>
+    <p>
+      Discover a world of culinary creativity. CookBook helps you manage, explore, and visualize your recipes across cuisines.  
+      Whether you’re adding your favorite dishes or learning from others, CookBook is your go-to recipe companion.
+    </p>
+
+    <div class="links">
+      <a href="charts.html">View Charts</a>
+      <a href="create.html">Add New Recipe</a>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 CookBook | Designed by Team CookBook</p>
+    © 2025 CookBook | Designed by Team CookBook
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
