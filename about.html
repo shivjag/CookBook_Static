@@ -5,8 +5,34 @@
   <title>About Us | CookBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/CookBook_Static/css/styles.css">
+  <style>
+    /* Quick responsive styling for the ERD section */
+    .erd-section {
+      text-align: center;
+      margin: 40px 0;
+    }
 
+    .erd-section img {
+      width: 70%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .erd-section p {
+      font-style: italic;
+      color: gray;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .erd-section img {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <h1>About the CookBook Team</h1>
@@ -28,9 +54,10 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Logical Data Model</h2>
-      <img src="assets/logical_data_model.png" alt="CookBook ERD">
+    <section class="erd-section">
+      <h2>📊 Logical Data Model</h2>
+      <img src="assets/logical_data_model.png" alt="CookBook ERD Diagram">
+      <p>Figure 1: Logical Data Model for the CookBook Web Application</p>
     </section>
 
     <section>
@@ -40,7 +67,8 @@
   </main>
 
   <footer class="site-footer">
-    2025 CookBook Team
+    © 2025 CookBook Team
   </footer>
 </body>
 </html>
+
